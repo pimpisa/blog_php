@@ -36,7 +36,7 @@ h6, .h6 {
  */
 
 .blog-masthead {
-  background-color: #428bca;
+  background-color: #73CCD4;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -73,6 +73,12 @@ h6, .h6 {
   border-left: 5px solid transparent;
 }
 
+/*logo*/
+.blog-logo img {
+    width: 50%;
+    float: left;
+    margin: 30px;
+}
 
 /*
  * Blog name and description
@@ -163,4 +169,27 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/*Read more*/
+.readmore{
+    display: block;
+    text-align:center;
+    padding:5px;
+    background:#fff;
+    margin-top:10px;
+    color:#73CCD4;
+    border:1px solid #73CCD4;
+    border-radius:5px;
+}
+.readmore:hover{
+    display: block;
+    text-align:center;
+    padding:5px;
+    background:#73CCD4;
+    margin-top:10px;
+    color:#fff;
+    border:1px solid #73CCD4;
+    border-radius:5px;
+    text-decoration: none;
 }
