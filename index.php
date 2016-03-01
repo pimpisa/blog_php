@@ -1,5 +1,18 @@
+<?php include 'config/config.php';?> 
 <?php include 'libraries/Database.php';?>
 <?php include 'includes/header.php';?>
+<?php 
+  //Create DB Object
+  $db = new Database();
+
+ //Create Query
+  $query = "SELECT * FROM posts";
+
+  //Run Query
+  $posts = $db->select($query);
+
+?>
+<?php if($posts) :?>
 
 
 
@@ -43,5 +56,10 @@
               <li><a href="#">Next</a></li>
             </ul>
           </nav>
+
+<?php else : ?>
+  <p> There are no post yet</p>
+
+<?php endif; ?>
 
 <?php include 'includes/footer.php'?>       
